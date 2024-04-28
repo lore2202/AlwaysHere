@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/emociones"
+    tools:context=".ActivityDatosCientificos">
+
+    <WebView
+        android:id="@+id/webView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0" />
+
+    <Button
+        android:id="@+id/btnPensamientos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pensamientos intrusivos"
+        android:backgroundTint="@color/pink"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="400dp"
+        android:onClick="openLink"
+        android:tag="https://psicologiaymente.com/psicologia/pensamientos-intrusivos" />
+
+    <Button
+        android:id="@+id/btnAnsiedad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ansiedad"
+        android:backgroundTint="@color/pink"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="26dp"
+        android:onClick="openLink"
+        android:tag="https://psicologiaymente.com/clinica/que-es-ansiedad"/>
+
+    <Button
+        android:id="@+id/btnEstres"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Estrés"
+        android:backgroundTint="@color/pink"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="26dp"
+        android:onClick="openLink"
+        android:tag="https://www.who.int/es/news-room/questions-and-answers/item/stress"/>
+
+    <Button
+        android:id="@+id/btnAtaqueAnsiedad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ataque de Ansiedad"
+        android:backgroundTint="@color/pink"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:onClick="openLink"
+        android:tag="https://psicologiaymente.com/clinica/como-actuar-ataque-de-ansiedad"/>
+
+    <Button
+        android:id="@+id/btnAtaquePanico"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ataque de Pánico"
+        android:backgroundTint="@color/pink"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:onClick="openLink"
+        android:tag="https://psicologiaymente.com/clinica/trastorno-de-panico"/>
+
+</LinearLayout>

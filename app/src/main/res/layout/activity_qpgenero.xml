@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/cerebro2"
+    android:padding="16dp">
+
+
+    <TextView
+        android:id="@+id/textViewAlwaysHere"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="AlwaysHere"
+        android:textStyle="bold"
+        android:textSize="34sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:id="@+id/textViewGenero"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="¿Con qué género te identificas?"
+        android:textSize="24sp"
+        android:layout_below="@id/textViewAlwaysHere"
+        android:layout_marginTop="26dp"/>
+
+    <EditText
+        android:id="@+id/editTextGenero"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@id/textViewGenero"
+        android:layout_marginTop="16dp"
+        android:hint="Ingresa tu género"/>
+
+
+    <Button
+        android:id="@+id/buttonListo"
+        android:layout_width="152dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextGenero"
+        android:backgroundTint="@color/pink"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="26dp"
+        android:text="Listo" />
+
+</RelativeLayout>

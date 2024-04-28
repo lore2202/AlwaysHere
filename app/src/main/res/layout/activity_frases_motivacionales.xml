@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/oracion"
+    tools:context=".ActivityFrasesMotivacionales">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/inicio"
+        android:text="INSPIRACIÓN DIARIA"
+        android:textColor="@color/white"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        android:layout_marginTop="58dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:gravity="center"
+        android:shadowColor="#000"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="3"
+        />
+
+    <Button
+        android:id="@+id/btnFrasesInspiradoras"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Frases Inspiradoras"
+        android:backgroundTint="@color/pink"
+        android:layout_below="@id/inicio"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp" />
+
+    <TextView
+        android:id="@+id/textViewFrases"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnFrasesInspiradoras"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text=""
+        android:visibility="gone" />
+
+
+    <Button
+        android:id="@+id/btnAmorP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Frases de Amor Propio"
+        android:backgroundTint="@color/pink"
+        android:layout_below="@id/textViewFrases"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp" />
+
+    <TextView
+        android:id="@+id/textAmorP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnAmorP"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text=""
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/btnReflex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Frases Reflexivas"
+        android:backgroundTint="@color/pink"
+        android:layout_below="@id/textAmorP"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp" />
+
+    <TextView
+        android:id="@+id/textReflex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnReflex"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text=""
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/btnSup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Frases de superación personal"
+        android:backgroundTint="@color/pink"
+        android:layout_below="@id/textReflex"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp" />
+
+    <TextView
+        android:id="@+id/textSup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnSup"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text=""
+        android:visibility="gone" />
+
+</RelativeLayout>
+

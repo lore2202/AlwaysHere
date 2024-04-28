@@ -1,0 +1,70 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <VideoView
+        android:id="@+id/videoView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnDormir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dormir mejor"
+        android:backgroundTint="@color/pink"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginBottom="20dp" />
+
+    <Button
+        android:id="@+id/btnDatosCientificos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Artículos Científicos"
+        android:backgroundTint="@color/pink"
+        app:layout_constraintBottom_toTopOf="@+id/btnDormir"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginBottom="20dp" />
+
+    <Button
+        android:id="@+id/btnMeditaciones"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Control de ansiedad"
+        android:backgroundTint="@color/pink"
+        app:layout_constraintBottom_toTopOf="@+id/btnDatosCientificos"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginBottom="20dp" />
+
+    <Button
+        android:id="@+id/btnFrasesMotivacionales"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Frases Motivacionales"
+        android:backgroundTint="@color/pink"
+        app:layout_constraintBottom_toTopOf="@+id/btnMeditaciones"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginBottom="20dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.75" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

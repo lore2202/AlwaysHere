@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo"
+    tools:context=".SiguientePantalla">
+
+    <TextView
+        android:id="@+id/textViewPregunta1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="¿Tengo ansiedad con mucha facilidad?"
+        android:textSize="20sp"
+        android:textColor="@android:color/white"
+        android:layout_margin="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"/>
+
+    <CheckBox
+        android:id="@+id/chkEstoyDeAcuerdo1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Estoy de acuerdo"
+        android:textColor="@android:color/white"
+        android:layout_below="@id/textViewPregunta1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="0dp"/>
+
+    <CheckBox
+        android:id="@+id/chkNoEstoyDeAcuerdo1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No estoy de acuerdo"
+        android:textColor="@android:color/white"
+        android:layout_below="@id/chkEstoyDeAcuerdo1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/textViewPregunta2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="¿Qué te impide dormir por las noches?"
+        android:textSize="20sp"
+        android:textColor="@android:color/white"
+        android:layout_below="@id/chkNoEstoyDeAcuerdo1"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"/>
+
+    <CheckBox
+        android:id="@+id/chkPensamientosRepetitivos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pensamientos repetitivos"
+        android:textColor="@android:color/white"
+        android:layout_below="@id/textViewPregunta2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"/>
+
+    <CheckBox
+        android:id="@+id/chkEstresAnsiedad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Estrés y Ansiedad"
+        android:textColor="@android:color/white"
+        android:layout_below="@id/chkPensamientosRepetitivos"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"/>
+
+    <CheckBox
+        android:id="@+id/chkLuz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Luz"
+        android:textColor="@android:color/white"
+        android:layout_below="@id/chkEstresAnsiedad"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"/>
+
+    <CheckBox
+        android:id="@+id/chkRuido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ruido"
+        android:textColor="@android:color/white"
+        android:layout_below="@id/chkLuz"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/textViewPregunta3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="¿Cómo te gustaría dormir esta noche?"
+        android:textSize="20sp"
+        android:textColor="@android:color/white"
+        android:layout_below="@id/chkRuido"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"/>
+
+    <CheckBox
+        android:id="@+id/chkMeditaciones"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Con meditaciones para dormir"
+        android:textColor="@android:color/white"
+        android:layout_below="@id/textViewPregunta3"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"/>
+
+    <CheckBox
+        android:id="@+id/chkHistorias"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Con historias para dormir"
+        android:textColor="@android:color/white"
+        android:layout_below="@id/chkMeditaciones"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"/>
+
+    <CheckBox
+        android:id="@+id/chkSonidosNaturaleza"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Con sonidos de la naturaleza"
+        android:textColor="@android:color/white"
+        android:layout_below="@id/chkHistorias"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/btnSiguiente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Siguiente"
+        android:textColor="@android:color/white"
+        android:backgroundTint="@color/pink"
+        android:layout_below="@id/chkSonidosNaturaleza"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+
+</RelativeLayout>

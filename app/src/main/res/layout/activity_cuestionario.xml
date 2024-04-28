@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo"
+    tools:context=".CuestionarioActivity">
+
+    <TextView
+        android:id="@+id/textViewTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CUESTIONARIO INICIAL"
+        android:textSize="38sp"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="16dp"
+        android:layout_margin="18dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"/>
+
+    <TextView
+        android:id="@+id/textViewPregunta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="¿Cuáles de estas emociones has experimentado más intensamente este último mes?"
+        android:textSize="23sp"
+        android:layout_centerInParent="true"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="32dp"
+        android:layout_margin="18dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/textViewTitulo"/>
+
+
+    <CheckBox
+        android:id="@+id/chkEstres"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="   Estrés"
+        android:layout_below="@+id/textViewPregunta"
+        android:backgroundTint="@color/pink"
+        android:layout_centerHorizontal="true"
+        android:drawableLeft="@drawable/naranja"
+        android:layout_margin="20dp"
+        android:textColor="@android:color/white"/>
+
+    <CheckBox
+        android:id="@+id/chkAnsiedad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="   Ansiedad"
+        android:layout_below="@+id/chkEstres"
+        android:backgroundTint="@color/pink"
+        android:layout_centerHorizontal="true"
+        android:drawableLeft="@drawable/azul"
+        android:layout_margin="20dp"
+        android:textColor="@android:color/white"/>
+
+    <CheckBox
+        android:id="@+id/chkCansancio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="   Cansancio"
+        android:layout_below="@+id/chkAnsiedad"
+        android:backgroundTint="@color/pink"
+        android:layout_centerHorizontal="true"
+        android:drawableLeft="@drawable/amarrillo"
+        android:layout_margin="20dp"
+        android:textColor="@android:color/white"/>
+
+    <CheckBox
+        android:id="@+id/chkFelicidad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="   Felicidad"
+        android:layout_below="@+id/chkCansancio"
+        android:backgroundTint="@color/pink"
+        android:layout_centerHorizontal="true"
+        android:drawableLeft="@drawable/verde"
+        android:layout_margin="20dp"
+        android:textColor="@android:color/white"/>
+
+    <Button
+        android:id="@+id/btnSiguiente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Siguiente"
+        android:layout_below="@+id/chkFelicidad"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textColor="@android:color/white"
+        android:backgroundTint="@color/pink" />
+
+
+</RelativeLayout>

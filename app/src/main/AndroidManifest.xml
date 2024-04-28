@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/app2"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/app2_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AlwaysApp_Final"
+        tools:targetApi="31">
+        <activity
+            android:name=".ActivityFrasesMotivacionales"
+            android:exported="false" />
+        <activity
+            android:name=".ActivityMeditaciones"
+            android:exported="false" />
+        <activity
+            android:name=".ActivityDatosCientificos"
+            android:exported="false" />
+        <activity
+            android:name=".ActivityDormir"
+            android:exported="false" />
+        <activity
+            android:name=".PantallaP"
+            android:exported="false" />
+        <activity
+            android:name=".SiguientePantalla"
+            android:exported="false" />
+        <activity
+            android:name=".Cuestionario3"
+            android:exported="false" />
+        <activity
+            android:name=".Cuestionario2"
+            android:exported="false" />
+        <activity
+            android:name=".TPbienvenida"
+            android:exported="false" />
+        <activity
+            android:name=".SPnombre"
+            android:exported="false" />
+        <activity
+            android:name=".QPgenero"
+            android:exported="false" />
+        <activity
+            android:name=".InicioActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CuestionarioActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CPedad"
+            android:exported="false" />
+        <activity
+            android:name=".Comienzo"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

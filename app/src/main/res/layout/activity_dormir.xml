@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+android:background="@drawable/dormir"
+tools:context=".ActivityDormir">
+
+<WebView
+    android:id="@+id/webView"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="0" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/inicioSesion"
+        android:text="DORMIR MEJOR"
+        android:textColor="@color/white"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        android:layout_marginTop="58dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:gravity="center"
+        android:shadowColor="#000"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="3"
+        />
+
+
+    <Button
+    android:id="@+id/btnDiaUno"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Meditación guidada para dormir. Día 1"
+    android:backgroundTint="@color/pink"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginTop="20dp"
+    android:onClick="openLink"
+    android:tag="https://youtu.be/vFrHhwCOaW0?si=PVNGkYOXqrU1RkFE" />
+
+<Button
+    android:id="@+id/btnDiaDos"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Meditación guiada para sanar y agradecer. Día 2"
+    android:backgroundTint="@color/pink"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginTop="26dp"
+    android:onClick="openLink"
+    android:tag="https://youtu.be/ZISNk5aQNaE?si=HTDRdaxDSLUwYBbe"/>
+
+<Button
+    android:id="@+id/btnDiaTres"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="¿Cómo me vuelvo a dormir si me despierto en la noche?"
+    android:backgroundTint="@color/pink"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginTop="26dp"
+    android:onClick="openLink"
+    android:tag="https://youtu.be/RDGOwTwYV1g?si=8tucR2to_A0fQVEv"/>
+
+<Button
+    android:id="@+id/btnDiaCuatro"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="¿Cómo superar el miedo a no dormir?"
+    android:backgroundTint="@color/pink"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginTop="16dp"
+    android:onClick="openLink"
+    android:tag="https://youtu.be/6aI72hNwrBw?si=bme3ta0Gxu30OfoB"/>
+
+<Button
+    android:id="@+id/btnCosas"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Sonidos para dormir"
+    android:backgroundTint="@color/pink"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginTop="16dp"
+    android:onClick="openLink"
+    android:tag="https://youtu.be/oarqCE9i1NA?si=SoEsh0hzsi4s1rzo"/>
+
+</LinearLayout>

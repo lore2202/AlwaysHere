@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+android:background="@drawable/meditar"
+tools:context=".ActivityMeditaciones">
+
+<WebView
+    android:id="@+id/webView"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="0" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/inicioSesion"
+        android:text="MEDITACIONES"
+        android:textColor="@color/white"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        android:layout_marginTop="58dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:gravity="center"
+        android:shadowColor="#000"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="3"
+        />
+
+<Button
+    android:id="@+id/btnDiaUno"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Hoy me elijo a mí. Día 1"
+    android:backgroundTint="@color/pink"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginTop="400dp"
+    android:onClick="openLink"
+    android:tag="https://youtu.be/AYE0uWf4FBY?si=AkkqKb1ZGbVwCXjN" />
+
+<Button
+    android:id="@+id/btnDiaDos"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="El arte de conocerte. Día 2"
+    android:backgroundTint="@color/pink"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginTop="26dp"
+    android:onClick="openLink"
+    android:tag="https://youtu.be/m9f4CkoBEfY?si=ksdm6T3GooMueFqw"/>
+
+<Button
+    android:id="@+id/btnDiaTres"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Soy suficiente como soy. Día 3"
+    android:backgroundTint="@color/pink"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginTop="26dp"
+    android:onClick="openLink"
+    android:tag="https://youtu.be/AUKU3aDqkBw?si=Gh4rWNy9t6K7ps8b"/>
+
+<Button
+    android:id="@+id/btnDiaCuatro"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Estar conmigo. Día 4"
+    android:backgroundTint="@color/pink"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginTop="16dp"
+    android:onClick="openLink"
+    android:tag="https://youtu.be/sZeU8NylrXQ?si=dan3ZNZyebNy6RwL"/>
+
+<Button
+    android:id="@+id/btnCosas"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Recordatorios diarios. Día 5"
+    android:backgroundTint="@color/pink"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginTop="16dp"
+    android:onClick="openLink"
+    android:tag="https://youtu.be/1_AkfxOZnts?si=WaMe3ygXIRbYJcm-"/>
+
+</LinearLayout>
